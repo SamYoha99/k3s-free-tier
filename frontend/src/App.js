@@ -5,7 +5,7 @@ function App() {
   const [name, setName] = useState('');
 
   // Update this to your EC2 public IP or use an Ingress rule
-  const API_URL = `http://${window.location.hostname}:5000/api/items`;
+  const API_URL = `http://${window.location.hostname}:30005/api/items`;
 
   useEffect(() => {
     fetch(API_URL)
